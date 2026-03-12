@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.client">
+
+    <!-- Firebase + Internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:label="Client App"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ⭕ Màn hình đầu tiên: Login -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Đăng ký -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Trang chính Client -->
+        <activity
+            android:name=".activity.ClientHomeActivity"
+            android:exported="false" />
+
+
+        <!-- Lịch sử mua vé -->
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:exported="false" />
+
+        <!-- Vé của tôi -->
+        <activity
+            android:name=".activity.MyTicketsActivity"
+            android:exported="false" />
+
+        <!-- Hồ sơ -->
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StandingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.ClientScheduleActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.BuyTicketActivity"
+            android:exported="false" />
+
+
+        <!-- Xếp hạng -->
+        <activity
+            android:name=".activity.RankingActivity"
+            android:exported="false" />
+
+        <!-- Trang khác -->
+        <activity
+            android:name=".activity.OtherActivity"
+            android:exported="false" />
+
+        <!-- MainActivity nếu sử dụng -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+
+        <!-- Chỉnh sửa hồ sơ -->
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.TicketDetailActivity" />
+
+        <activity
+            android:name=".activity.HighlightPlayerActivity"/>
+        <activity
+            android:name=".activity.NotificationActivity"/>
+
+
+
+
+
+        <!-- ▬▬▬▬ KHU VỰC ADMIN ▬▬▬▬ -->
+        <activity
+            android:name=".admin.AdminHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.UserManagerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.AdminMatchListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.AdminAddEditMatchActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.TicketManagerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.RankingManagerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminNotificationActivity"
+            android:exported="false" />
+
+        <activity android:name=".admin.AdminTicketRequestActivity"/>
+
+
+
+    </application>
+
+</manifest>

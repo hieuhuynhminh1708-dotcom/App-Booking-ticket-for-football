@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Vòng đỏ -->
+    <path
+        android:fillColor="#D50000"
+        android:pathData="M256,32A224,224 0 1,0 480,256 224,224 0 0,0 256,32z"/>
+
+    <!-- Bóng trắng -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256,96A160,160 0 1,0 416,256 160,160 0 0,0 256,96z"/>
+
+    <!-- Lục giác trung tâm -->
+    <path
+        android:fillColor="#D50000"
+        android:pathData="M256,170l60,40 -20,70h-80l-20,-70 60,-40z"/>
+
+    <!-- Lục giác phụ (trên trái) -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M180,212l36,28 -14,58 -54,-20 -18,-50 50,-16z"/>
+
+    <!-- Lục giác phụ (trên phải) -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M332,212l50,16 -18,50 -54,20 -14,-58 36,-28z"/>
+
+    <!-- Lục giác phụ (dưới) -->
+    <path
+        android:fillColor="#D50000"
+        android:pathData="M212,318h88l30,50 -74,44 -74,-44 30,-50z"/>
+</vector>

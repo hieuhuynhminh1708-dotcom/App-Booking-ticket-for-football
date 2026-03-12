@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/nav_schedule"
+        android:title="Lịch đấu"
+        android:icon="@drawable/ic_schedule"/>
+
+    <item android:id="@+id/nav_ticket"
+        android:title="Vé"
+        android:icon="@drawable/ic_ticket"/>
+
+    <item android:id="@+id/nav_profile"
+        android:title="Hồ sơ"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

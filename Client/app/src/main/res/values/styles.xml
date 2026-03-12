@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme mặc định dành cho AppCompat -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#64B5F6</item>
+    </style>
+
+    <!-- Style cũ (có thể dùng lại nơi khác) -->
+    <style name="HomeButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:background">#B71C1C</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <!-- MENU Ô VUÔNG HOME -->
+    <style name="MenuSquare">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">#B71C1C</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ✅ STYLE CHO TRANG HỒ SƠ -->
+    <style name="ProfileItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">#B71C1C</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+</resources>

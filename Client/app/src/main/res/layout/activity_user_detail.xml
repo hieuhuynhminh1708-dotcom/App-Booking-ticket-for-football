@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#B71C1C"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="Chi tiết người dùng"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TÊN -->
+            <TextView
+                android:id="@+id/tvName"
+                android:text="(Tên người dùng)"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#111111"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- EMAIL -->
+            <TextView
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:text="(email)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- CCCD / NIK -->
+            <TextView
+                android:text="CCCD / NIK"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvNik"
+                android:text="(nik)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- SỐ ĐIỆN THOẠI -->
+            <TextView
+                android:text="Số điện thoại"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:text="(phone)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- NGÀY SINH -->
+            <TextView
+                android:text="Ngày sinh"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvBirthDate"
+                android:text="(birthDate)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- GIỚI TÍNH -->
+            <TextView
+                android:text="Giới tính"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:text="(gender)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- ĐỊA CHỈ -->
+            <TextView
+                android:text="Địa chỉ"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:text="(address)"
+                android:textColor="#B71C1C"
+                android:padding="12dp"
+                android:background="#FFFFFF"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- XÓA -->
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XÓA TÀI KHOẢN"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#D32F2F" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

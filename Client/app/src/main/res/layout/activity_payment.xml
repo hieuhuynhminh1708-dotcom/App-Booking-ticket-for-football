@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin đơn"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quét QR để thanh toán. Sau khi thanh toán xong, bấm “ĐÃ THANH TOÁN”. Nếu muốn hủy, bấm “YÊU CẦU HỦY” (admin sẽ duyệt)."
+        android:textSize="13sp"
+        android:paddingBottom="12dp" />
+
+    <ImageView
+        android:id="@+id/imgQr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/qr_pay"
+        android:scaleType="fitCenter"
+        android:contentDescription="QR thanh toán" />
+
+    <Button
+        android:id="@+id/btnPaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐÃ THANH TOÁN"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YÊU CẦU HỦY"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

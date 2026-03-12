@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ================= TIÊU ĐỀ + CHUÔNG ================= -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#B71C1C">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TRANG CHỦ"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_centerInParent="true" />
+
+            <!-- 🔔 ICON CHUÔNG -->
+            <FrameLayout
+                android:id="@+id/btnNotification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imgBell"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_notifications_24"
+                    android:tint="#FFFFFF" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <!-- ================= THẺ THÀNH VIÊN ================= -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="16dp"
+            android:background="#B71C1C"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgAvatarHome"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_placeholder"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_circle"
+                android:clipToOutline="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgAvatarHome"
+                android:layout_marginStart="12dp"
+                android:text="Đang tải thông tin..."
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_toEndOf="@id/imgAvatarHome"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Số điện thoại"
+                android:textColor="#EEEEEE"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Thẻ thành viên"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- ================= MENU CHỨC NĂNG ================= -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_margin="16dp">
+
+            <Button
+                android:id="@+id/btnProfile"
+                style="@style/MenuSquare"
+                android:text="HỒ SƠ" />
+
+            <Button
+                android:id="@+id/btnMatches"
+                style="@style/MenuSquare"
+                android:text="LỊCH ĐẤU" />
+
+            <Button
+                android:id="@+id/btnStandings"
+                style="@style/MenuSquare"
+                android:text="BẢNG XẾP HẠNG" />
+
+            <Button
+                android:id="@+id/btnMyTickets"
+                style="@style/MenuSquare"
+                android:text="VÉ CỦA TÔI" />
+
+            <Button
+                android:id="@+id/btnHistory"
+                style="@style/MenuSquare"
+                android:text="LỊCH SỬ" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/MenuSquare"
+                android:text="ĐĂNG XUẤT" />
+        </GridLayout>
+
+        <!-- ================= TIÊU ĐỀ TIN NỔI BẬT ================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIGHLIGHTS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#B71C1C"
+            android:padding="12dp" />
+
+        <!-- ================= HIỆU ỨNG ĐANG TẢI ================= -->
+        <include
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_shimmer_highlight" />
+
+        <!-- ================= DANH SÁCH TIN ================= -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHighlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:nestedScrollingEnabled="false"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

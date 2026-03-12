@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969550640466",
+    "project_id": "conghung-9ebcc",
+    "storage_bucket": "conghung-9ebcc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969550640466:android:aa6dbb457f43017f5ef68b",
+        "android_client_info": {
+          "package_name": "com.example.client"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9N9SvtbfjOsmUydAq7zVZ_l92xdoGwBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

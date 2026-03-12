@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#B71C1C"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="Mua vé"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- THÔNG TIN TRẬN -->
+            <TextView
+                android:id="@+id/tvMatchName"
+                android:text="Đội A vs Đội B"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvMatchInfo"
+                android:text="20/12/2025 - 18:30\nSân Mỹ Đình"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvWeekendSurcharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="#FFF3CD"
+                android:textColor="#856404"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="⚠️ Vé cuối tuần (Thứ 7 và Chủ nhật) sẽ phụ thu thêm 10%" />
+
+
+            <!-- CHỌN LOẠI VÉ -->
+            <TextView
+                android:text="Chọn loại vé"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- VÉ RENDER ĐỘNG -->
+            <LinearLayout
+                android:id="@+id/layoutTickets"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- TỔNG TIỀN -->
+            <TextView
+                android:id="@+id/tvTotal"
+                android:text="Tổng tiền: 0 VND"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSurchargeDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="#616161"
+                android:visibility="gone"
+                android:text="Phụ thu cuối tuần (10%): +0 VND" />
+
+
+            <!-- XÁC NHẬN -->
+            <Button
+                android:id="@+id/btnConfirm"
+                android:text="XÁC NHẬN MUA"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#B71C1C"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- SƠ ĐỒ SÂN -->
+            <TextView
+                android:text="Sơ đồ sân"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgStadium"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stadium_map"
+                android:contentDescription="Sơ đồ sân vận động" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
